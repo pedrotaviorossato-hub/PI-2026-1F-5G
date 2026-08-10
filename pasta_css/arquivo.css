@@ -455,4 +455,239 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0B0B0F;
+    color: white;
+    opacity: 0;
+    animation: aparecer 1.2s ease forwards;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 15, 0.75);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 20px 8%;
+    transition: 0.5s ease;
+}
+
+header.escondido {
+    transform: translateY(-120%);
+}
+
+.cabecalho {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.logo {
+    color: #2563EB;
+    font-size: 28px;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E5E7EB;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    background: linear-gradient(135deg, #2563EB, #8B5CF6);
+    border-radius: 8px;
+}
+
+.hero {
+    height: 100vh;
+    background-color: #0B0B0F;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(
+            ellipse 60% 50% at 30% 40%,
+            rgba(37, 99, 235, 0.18) 0%,
+            transparent 70%
+        ),
+        radial-gradient(
+            ellipse 50% 50% at 70% 60%,
+            rgba(139, 92, 246, 0.15) 0%,
+            transparent 70%
+        );
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 900px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 78px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #60A5FA, #A78BFA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.hero-content p {
+    font-size: 22px;
+    color: #D1D5DB;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hero button {
+    padding: 16px 38px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #2563EB, #8B5CF6);
+    transition: 0.3s;
+    box-shadow:
+        0 0 20px rgba(59, 130, 246, 0.3),
+        0 0 30px rgba(139, 92, 246, 0.2);
+}
+
+.hero button:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow:
+        0 0 25px rgba(59, 130, 246, 0.5),
+        0 0 40px rgba(139, 92, 246, 0.4);
+}
+
+.destaques {
+    padding: 70px 8%;
+    background: linear-gradient(135deg, #2563EB, #8B5CF6);
+}
+
+.destaques-grid {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.destaque-item {
+    position: relative;
+    min-height: 200px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.destaque-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.destaque-item p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.destaque-item:hover img {
+    transform: scale(1.1);
+}
+
+.secao {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 80px 20px;
+}
+
+.box1 {
+    width: 95%;
+    max-width: 950px;
+    margin: 5px auto;
+    padding: 20px;
+    background: transparent;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.box1 h1 {
+    width: 95%;
+    max-width: 950px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box1 span {
+    background: linear-gradient(135deg, #60A5FA, #A78BFA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box1 p {
+    max-width: 850px;
+    margin: auto;
+}
 
