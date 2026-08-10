@@ -41,3 +41,73 @@ header.escondido {
     align-items: center;
     background-color: transparent;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0B0B0F;
+    color: white;
+    opacity: 0;
+    animation: aparecer 1.2s ease forwards;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 15, 0.75);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 20px 8%;
+    transition: 0.5s ease;
+}
+
+header.escondido {
+    transform: translateY(-120%);
+}
+
+.cabecalho {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.logo {
+    color: #2563EB;
+    font-size: 28px;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E5E7EB;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    background: linear-gradient(135deg, #2563EB, #8B5CF6);
+    border-radius: 8px;
+}
+
