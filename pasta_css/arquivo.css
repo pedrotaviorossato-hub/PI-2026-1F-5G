@@ -15,3 +15,69 @@ body{
 html{
     scroll-behavior: smooth;
 }
+.caixa1{
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.logo{
+    color:#2563EB;
+    font-size: 28px;
+    margin-right: auto;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(10,10,15,0.75);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.05);
+    padding:20px 8%;
+}
+
+header{
+    transition:0.5s ease;
+}
+
+header.escondido{
+    transform:translateY(-120%);
+}
+
+.botao-header{
+    position:fixed;
+    top:20px;
+    left:30px;
+    z-index:2000;
+    background:linear-gradient(135deg,#2563EB,#8B5CF6);
+    border:none;
+    color:white;
+    padding:12px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.botao-header:hover{
+    transform:scale(1.05);
+}
+
+nav a{
+    text-decoration: none;
+    color:#E5E7EB;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: white;
+    background:linear-gradient(135deg,#2563EB,#8B5CF6);
+    border-radius: 8px;
+}
