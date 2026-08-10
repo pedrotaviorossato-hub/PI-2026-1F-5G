@@ -1,6 +1,17 @@
-/*/ Victor Gabriel Cappellesso/*/
-
 body{
-    .h1
+    background:#0B0B0F;
+    color:black;
+    opacity: 0;
+    animation: aparecer 1.2s ease forwards;
+}
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
 }
