@@ -382,3 +382,52 @@ h3{
 p{
     font-size: 20px;
 }
+
+.footer{
+    background-color: transparent;
+    color: white;
+    padding: 40px 20px 20px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+}
+
+.footer h3,
+.footer h4{
+    margin-bottom: 15px;
+}
+
+.footer p,
+.footer a{
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.footer a:hover{
+    color: white;
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    color: #aaa;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
