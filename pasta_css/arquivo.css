@@ -277,3 +277,108 @@ section{
 .ultimo{
     margin-top: 10px;
 }
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:24px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.stat-item{
+    position:relative;
+    width:180px;
+    height:180px;
+    background:rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:16px;
+    backdrop-filter:blur(8px);
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.stat-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.stat-item p{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.85);
+    color:white;
+    font-size:18px;
+    opacity:0;
+    transition:0.5s;
+}
+
+model-viewer{
+    width:250px;
+    height:250px;
+    display:block;
+    margin:auto;
+    background:transparent;
+}
+
+.stat-item:hover img{
+    opacity:0;
+    transform:scale(1.1);
+}
+
+.stat-item:hover p{
+    opacity:1;
+}
+
+.caixa2{
+    border:2px solid black;
+    padding: 15px;
+    margin: 30px auto;
+    background-color: transparent;
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+.caixa3{
+    border:2px solid black;
+}
+
+h1{
+    font-size: 75px;
+    text-align: start;
+    max-width: 1200px;
+    margin:auto;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h3{
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    color:white;
+}
+
+.destaque{
+    font-size: 20px;
+}
+
+p{
+    font-size: 20px;
+}
