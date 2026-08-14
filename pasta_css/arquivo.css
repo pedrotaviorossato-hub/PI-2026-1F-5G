@@ -94,7 +94,7 @@ nav a:hover{
 
 
 .hero{
-    height:100vh;
+    height:110vh;
     background-color: #0B0B0F;
     position: relative;
     overflow: hidden;
@@ -278,12 +278,6 @@ section{
     0 0 30px rgba(139,92,246,0.15);
 }
 
-
-.ultimo{
-    margin-top: 10px;
-}
-
-
 .stats-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
@@ -295,8 +289,8 @@ section{
 
 .stat-item{
     position:relative;
-    width:180px;
-    height:180px;
+    width:200px;
+    height:200px;
 
 
     background:rgba(255,255,255,0.12);
