@@ -38,6 +38,13 @@
             <button>Saiba Mais</button>
         </a>
     </div>
+            <model-viewer
+        src="aichip.glb"
+        camera-controls
+        auto-rotate
+        rotation-per-second="60deg"
+        ar>
+        </model-viewer>
 </section>
 
 
@@ -68,13 +75,6 @@
         <h1>O que é a <span>desvalorização de artistas</span>?</h1>
         <p>A desvalorização dos artistas se trata do principal assunto desse projeto, e se baseia na substituição de pessoas e artistas reais e com propostas unicas e inovadoras por IA's da qual apenas junta e mescla ideias ja criadas para respostas, podendo tanto causar problemas juridicos como ter uma falta imenssa de originalidade..</p>
         <br>
-        <model-viewer
-        src="aichip.glb"
-        camera-controls
-        auto-rotate
-        rotation-per-second="60deg"
-        ar>
-        </model-viewer>
     </div>
 </section>
 
@@ -106,7 +106,99 @@
     </div>
 </section>
 
+<section class="secao4">
 
+        <h3>
+            Faça um teste
+        </h3>
+        <p class="quiz-intro">
+            Você consegue identificar se um áudio foi criado
+            por um artista humano ou por uma Inteligência Artificial?
+        </p>
+        <div class="quiz-container">
+            <div id="quiz-box">
+                <div class="quiz-topo">
+                    <span id="pergunta-numero">
+                        Pergunta 1 de 6
+                    </span>
+                    <span id="pontuacao">
+                        Pontuação: 0
+                    </span>
+                </div>
+                <h2 id="pergunta-titulo">
+                    Este áudio foi feito por um humano
+                    ou por uma IA?
+                </h2>
+                <div class="audio-player">
+                    <audio id="audio-elemento" controls>
+                        Seu navegador não suporta áudio.
+                    </audio>
+                </div>
+                <div class="opcoes-container">
+                    <button
+                        class="opcao"
+                        id="btn-humano"
+                        onclick="responder('humano')">
+                        <span>
+                            Humano
+                        </span>
+                        <small>
+                            Feito por um artista
+                        </small>
+                    </button>
+                    <button
+                        class="opcao"
+                        id="btn-ia"
+                        onclick="responder('ia')">
+                        <span>
+                            Inteligência Artificial
+                        </span>
+                        <small>
+                            Gerado por IA
+                        </small>
+                    </button>
+                </div>
+                <div
+                    id="feedback"
+                    class="feedback">
+                </div>
+
+                <button
+                    id="btn-proximo"
+                    class="btn-proximo"
+                    onclick="proximaPergunta()"
+                    disabled>
+                    Próxima pergunta →
+                </button>
+            </div>
+        <div
+            id="resultado-box"
+            class="escondido">
+        <div class="resultado-icon"> 
+        </div>
+        <h2>
+            Quiz concluído!
+        </h2>
+        <p id="texto-pontuacao">
+            Você acertou 0 de 6 perguntas.
+        </p>
+        <div class="barra-resultado">
+            <div id="barra-progresso">
+            </div>
+        </div>
+        <p id="mensagem-resultado">
+        </p>
+        <button
+            class="btn-proximo"
+            onclick="reiniciarQuiz()">
+            Tentar novamente
+        </button>
+        </div>
+    </div>
+
+</section>
+
+</section>
 <section class="secao5">
     <footer class="footer">
         <div class="footer-container">
