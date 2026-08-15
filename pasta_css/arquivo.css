@@ -174,13 +174,14 @@ section{
     font-size: 18px;
 }
 .box1{
-    width: 95%;
+    width: 95%px;
     max-width: 950px;
     margin:5px auto;
     padding:20px;
     background: transparent;
     border-radius: 12px;
     text-align: center;
+    justify-content: center;
 }
 .box1 h1{
     width: 95%;
@@ -337,8 +338,40 @@ model-viewer{
     margin:auto;
     background:transparent;
 }
-       
 
+#robot{
+    flex:1;
+    width:600px;
+    height:600px;
+    margin-right:0;
+    padding:0;
+    background:transparent;
+}
+
+#beethoven{
+    flex:1;
+    width:600px;
+    height:600px;
+    margin-left:0;
+    padding:0;
+    background:transparent;
+}
+
+.container-3ds{
+    display: flex;
+    gap: 10px;
+}
+
+.rivalidade{
+    font-size:100px;
+    font-weight:900;
+    color:#EF4444;
+    text-shadow:
+        0 0 10px rgba(239,68,68,0.6),
+        0 0 30px rgba(239,68,68,0.4);
+    z-index:10;
+    margin-top: 200px;
+}
 
 .stat-item:hover img{
     opacity:0;
