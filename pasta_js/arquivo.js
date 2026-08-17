@@ -5,37 +5,37 @@ function toggleHeader(){
 const perguntas = [
 
     {
-        audio: "audios/audio1.mp3",
+        audio: "audios/audio1.mpeg",
         resposta: "humano",
         explicacao: "Este áudio foi produzido por um artista humano."
     },
 
     {
-        audio: "audios/audio2.mp3",
+        audio: "audios/audio2.mpeg",
         resposta: "ia",
         explicacao: "Este áudio foi gerado utilizando Inteligência Artificial."
     },
 
     {
-        audio: "audios/audio3.mp3",
+        audio: "audios/audio3.mpeg",
         resposta: "humano",
         explicacao: "Este áudio foi criado por uma pessoa."
     },
 
     {
-        audio: "audios/audio4.mp3",
+        audio: "audios/audio4.mpeg",
         resposta: "ia",
         explicacao: "Este áudio foi produzido por uma ferramenta de IA."
     },
 
     {
-        audio: "audios/audio5.mp3",
+        audio: "audios/audio5.mpeg",
         resposta: "ia",
         explicacao: "Este é um exemplo de áudio gerado artificialmente."
     },
 
     {
-        audio: "audios/audio6.mp3",
+        audio: "audios/audio6.mpeg",
         resposta: "humano",
         explicacao: "Este áudio foi produzido por um artista humano."
     }
@@ -48,7 +48,6 @@ let pontuacao = 0;
 let respondeu = false;
 
 
-/* Inicia o quiz */
 
 function iniciarQuiz(){
 
@@ -225,7 +224,7 @@ function finalizarQuiz(){
     if(porcentagem === 100){
 
         mensagem =
-            "Impressionante! Você conseguiu identificar todos os áudios.";
+            "Impressionante! Você conseguiu identificar todos os áudios, mas por quanto tempo?";
 
     }else if(porcentagem >= 70){
 

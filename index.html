@@ -13,12 +13,12 @@
 
 <body>
 <button class="botao-header" onclick="toggleHeader()">
-☰
+    ☰
 </button>
 
 <header>
     <div class="caixa1">
-        <h2 class="logo">NOME_DO_SITE</h2>
+        <h2 class="logo">Homem X IA</h2>
         <nav>
             <a href="#topico1">Sobre</a>
             <a href="#topico2">Importancia</a>
@@ -34,37 +34,30 @@
     <div class="hero-content">
         <h1>Desvalorização de Artistas</h1>
         <p>Os artistas criam e inovam, a IA aprende e copia.</p>
-        <a href="">
-            <button>Saiba Mais</button>
+        <a href="#quiz">
+            <button>Faça um Teste</button>
         </a>
     </div>
-        <model-viewer
-        src="modelos_3D/aichip.glb"
-        camera-controls
-        auto-rotate
-        rotation-per-second="60deg"
-        ar>
-        </model-viewer>
 </section>
 
 
 <section class="secao2">
         <div class="stats-grid">
             <div class="stat-item">
-                <img src="" alt="Imagem 1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="imagens/img1.png" alt="Imagem 1">
+                <p>A inteligência artificial permite produzir grandes quantidades de conteúdo em poucos segundos, aumentando a concorrência para artistas humanos.</p>
             </div>
             <div class="stat-item">
-                <img src="" alt="Imagem 2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="imagens/img2.png" alt="Imagem 2">
+                <p>Modelos de IA aprendem padrões a partir de grandes conjuntos de dados, levantando debates sobre autoria, inspiração e originalidade.</p>
             </div>
             <div class="stat-item">
-                <img src="" alt="Imagem 3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="imagens/img3.png" alt="Imagem 3">
+                <p>A expansão de conteúdos gerados por IA pode alterar a forma como artistas são contratados, remunerados e reconhecidos.</p>
             </div>
             <div class="stat-item">
-                <img src="" alt="Imagem 4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <img src="imagens/img4.png" alt="Imagem 4">
+                <p>A pergunta que fica é, quem deve receber crédito quando uma obra é criada com auxílio de inteligência artificial?</p>
             </div>
         </div>
 </section>
@@ -73,9 +66,15 @@
 <section class="secao">
     <div class="box1">
         <h1>O que é a <span>desvalorização de artistas</span>?</h1>
-        <p>A desvalorização dos artistas se trata do principal assunto desse projeto, e se baseia na substituição de pessoas e artistas reais e com propostas unicas e inovadoras por IA's da qual apenas junta e mescla ideias ja criadas para respostas, podendo tanto causar problemas juridicos como ter uma falta imenssa de originalidade..</p>
-        <br>
+        <p>A desvalorização de artistas ocorre quando o trabalho, a criatividade e a contribuição de profissionais da área artística deixam de receber o devido reconhecimento social, cultural ou financeiro.</p>
+
+        <p>Com o avanço das ferramentas de inteligência artificial capazes de gerar músicas, imagens, textos e outros conteúdos, surgem novos desafios para os artistas. A facilidade de produzir conteúdo artificialmente pode aumentar a concorrência e levantar discussões sobre autoria, remuneração, direitos autorais e reconhecimento.</p>
+
+        <p>O objetivo não é simplesmente colocar humanos contra a inteligência artificial, mas compreender como essa tecnologia está transformando a produção artística e quais impactos isso pode trazer para quem vive da própria criatividade.</p>
+        
     </div>
+    
+    <div class="rivtexto">Como diferenciar, essa é a grande Dúvida.</div>
     <div class="container-3ds">
         <model-viewer
         src="modelos_3D/humano.glb"
@@ -97,31 +96,31 @@
 <section class="secao3">
     <h3 id="topico1">Sobre o projeto</h3>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Este projeto busca investigar como o crescimento da inteligência artificial generativa está modificando a produção artística, especialmente no setor musical. A partir de informações, exemplos e um quiz interativo, buscamos estimular uma reflexão sobre criatividade, autoria, reconhecimento e o espaço dos artistas em um cenário cada vez mais influenciado pela tecnologia.
     </p>
+    <br>
     <div class="cards">
         <div class="card">
             <h3 id="topico2">Por que isso é importante</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
+                A IA está transformando a produção artística e levantando questões sobre autoria, remuneração, originalidade e reconhecimento.
         </div>
         <div class="card">
             <h3 id="topico3">Como funciona</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Apresentamos informações e exemplos sobre IA na produção artística e, ao final, um quiz para testar sua percepção.
             </p>
         </div>
         <div class="card ultimo">
             <h3 id="topico4">Nossa missão</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Estimular uma reflexão sobre tecnologia, criatividade e valorização dos artistas.
             </p>
         </div>
     </div>
 </section>
 
-<section class="secao4">
+<section class="secao4" id="quiz">
 
         <h3>
             Faça um teste
@@ -210,32 +209,48 @@
         </button>
         </div>
     </div>
-
 </section>
 
+<section class="conclusao"> 
+    <div class="conclusao-container">
+        <span class="conclusao-tag">CONCLUSÃO</span>
+        <h2> A tecnologia evolui. 
+            <span>A arte também.</span> 
+        </h2> 
+        <p> A inteligência artificial está transformando a maneira como músicas, imagens e outros conteúdos são produzidos. Essa transformação traz novas possibilidades, mas também levanta questões sobre autoria, originalidade, remuneração e reconhecimento dos artistas. </p> <p> Mais do que escolher entre humano ou IA, é importante entender como podemos utilizar a tecnologia sem deixar de valorizar a criatividade, o trabalho e a identidade de quem produz arte. 
+        </p> 
+        <div class="conclusao-frase"> 
+            <strong> 
+                Tecnologia pode criar novas possibilidades. Valorizar quem cria é uma escolha. 
+            </strong> 
+        </div> 
+    </div> 
 </section>
+
 <section class="secao5">
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-info">
-                <h3>TITULO DO SITE</h3>
-                <p>Pequena frase sobre o projeto.</p>
+                <h3>Homem X IA</h3>
+                <p>Os artistas criam e inovam, a IA aprende e copia.</p>
+                <img src="imagens/logo-ifc-vertical.png">
             </div>
             <div class="footer-links">
                 <h4>Links rápidos</h4>
                 <a href="#topico1">Sobre</a>
                 <a href="#topico2">Processo</a>
                 <a href="#topico3">Missão</a>
+                <a href="#quiz">Teste</a>
                 <a href="#inicio">Voltar ao Início</a>
             </div>
             <div class="footer-contact">
                 <h4>Contato</h4>
-                <p>email@exemplo.com</p>
-                <p>número de telefone(opcional)</p>
+                <p>pgrupo010@gmail.com</p>
+                <p>+55 49 9933-6994</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© Nome do site - Todos os direitos reservados</p>
+            <p>© 2026 Homem X IA — Todos os direitos reservados.</p>
         </div>
     </footer>
 </section>
