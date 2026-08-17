@@ -3,13 +3,14 @@ body{
     color:black;
     opacity: 0;
     animation: aparecer 1.2s ease forwards;
+
 }
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: sans-serif;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 
@@ -792,9 +793,8 @@ p{
 }
 
 .footer-info img{
-    width: 100px;
-    height: 100px;
-    background: white;
+    width: 250px;
+    height: 85px;
 }
 
 @media(max-width:700px){ 
