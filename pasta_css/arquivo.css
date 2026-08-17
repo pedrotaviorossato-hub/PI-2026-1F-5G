@@ -108,7 +108,7 @@ nav a:hover{
     justify-content:left;
     align-items:center;
     text-align:left;
-    padding:100px;
+    padding:250px;
 }
 
 
@@ -129,7 +129,7 @@ nav a:hover{
 
 
 .hero-content h1{
-    font: size 85px;
+    font: size 90px;
     margin-bottom:20px;
     line-height:1.1;
     background:linear-gradient(135deg,#60A5FA,#A78BFA);
@@ -141,7 +141,7 @@ nav a:hover{
 
 
 .hero-content p{
-    font-size:22px;
+    font-size:27px;
     color:#D1D5DB;
     line-height:1.8;
     margin-bottom:40px;
@@ -366,7 +366,7 @@ model-viewer{
     flex:1;
     width:450px;
     height:450px;
-    margin-right:0;
+    margin-right:300px;
     padding:0;
     background:transparent;
 }
@@ -375,7 +375,7 @@ model-viewer{
     flex:1;
     width:450px;
     height:450px;
-    margin-left:0;
+    margin-left:300px;
     padding:0;
     background:transparent;
 }
