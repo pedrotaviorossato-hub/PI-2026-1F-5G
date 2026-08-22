@@ -130,8 +130,9 @@ nav a:hover{
 
 
 .hero-content h1{
-    font-size: 70px;
-    margin-bottom:20px;
+    font-size: 65px;
+    margin-top: 78px;
+    margin-bottom:25px;
     line-height:1.1;
     background:linear-gradient(135deg,#60A5FA,#A78BFA);
     background-clip: text;
@@ -142,10 +143,12 @@ nav a:hover{
 
 
 .hero-content p{
-    font-size:27px;
+    font-size:23px;
     color:#D1D5DB;
     line-height:1.8;
     margin-bottom:40px;
+    display: flex;
+    max-width: 700px;
 }
 
 .textinho p{
@@ -844,39 +847,9 @@ p{
     height: 70px;
 }
 
-@media(max-width:700px){ 
-    .conclusao{ padding:70px 20px; } 
-    .conclusao h2{ font-size:50px; } 
-    .conclusao p{ font-size:16px; } }
-
-@media(max-width:700px){
-
-    #quiz-box,
-    #resultado-box{
-        padding:25px 18px;
-    }
-
-    #pergunta-titulo{
-        font-size:23px;
-    }
-
-    .opcoes-container{
-        grid-template-columns:1fr;
-    }
-
-    .quiz-topo{
-        font-size:13px;
-    }
-
-}
-
-@keyframes aparecer{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+.footer-info p{
+    max-width: 350px;
+    display: flex;
 }
 
 .secao-grafico{
@@ -923,6 +896,9 @@ p{
     display: flex;
     margin-left: 180px;
 }
+.secao6 h2{
+    color: white;
+}
 .secao6{
     background: #111;
     padding:70px 20px;
@@ -965,4 +941,39 @@ p{
 }
 .secao h2{
     color:#BFC3CC;
+}
+
+@media(max-width:700px){ 
+    .conclusao{ padding:70px 20px; } 
+    .conclusao h2{ font-size:50px; } 
+    .conclusao p{ font-size:16px; } }
+
+@media(max-width:700px){
+
+    #quiz-box,
+    #resultado-box{
+        padding:25px 18px;
+    }
+
+    #pergunta-titulo{
+        font-size:23px;
+    }
+
+    .opcoes-container{
+        grid-template-columns:1fr;
+    }
+
+    .quiz-topo{
+        font-size:13px;
+    }
+
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
