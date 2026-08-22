@@ -32,7 +32,7 @@ html{
 .logo{
     color:#2563EB;
     font-size: 28px;
-    margin-right: auto;
+    margin-left: 25px;
 }
 
 
@@ -109,7 +109,7 @@ nav a:hover{
     justify-content:left;
     align-items:center;
     text-align:left;
-    padding:150px;
+    padding:90px;
 }
 
 
@@ -130,7 +130,7 @@ nav a:hover{
 
 
 .hero-content h1{
-    font: size 90px;
+    font-size: 70px;
     margin-bottom:20px;
     line-height:1.1;
     background:linear-gradient(135deg,#60A5FA,#A78BFA);
@@ -148,6 +148,11 @@ nav a:hover{
     margin-bottom:40px;
 }
 
+.textinho p{
+    font-size: 17px;
+    margin-top: 20px;
+    color: white;
+}
 
 section{
         padding: 60px 0;
@@ -512,7 +517,7 @@ p{
 
 .footer h3,
 .footer h4{
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 }
 
 
@@ -795,7 +800,7 @@ p{
 #button {
     display: block;
     margin: 40px auto 0;
-
+    text-decoration: none;
     padding: 16px 38px;
     border: none;
     border-radius: 20px;
@@ -836,7 +841,7 @@ p{
 
 .footer-info img{
     width: 250px;
-    height: 85px;
+    height: 70px;
 }
 
 @media(max-width:700px){ 
@@ -875,19 +880,19 @@ p{
 }
 
 .secao-grafico{
-    background:#111;
+    background:#15151D;
     padding:60px 20px;
     text-align:center;
 }
 
 .secao-grafico h3{
     color:white;
-    margin-bottom:30px;
+    margin-bottom:15px;
 }
 
 .grafico-img{
-    width:50%;
-    max-width:700px;
+    width:80%;
+    max-width:750px;
     height:auto;
 
     border:3px solid #2563EB;
@@ -905,4 +910,16 @@ p{
     color:#9CA3AF;
     font-size:14px;
     margin-top:15px;
+    max-width: 950px;
+    margin-left: 170px;
+    display: flex;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 950px;
+    display: flex;
+    margin-left: 180px;
 }
