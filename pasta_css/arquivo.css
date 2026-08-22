@@ -930,11 +930,12 @@ p{
 }
 .secao6 h3{
     display: inline-block;
+    color:#BFC3CC;
 }
 .secao6 p{
     max-width:800px; 
     margin:0 auto 20px; 
-    color:#BFC3CC; 
+    color:white; 
     font-size:18px; 
     line-height:1.8;
 }
@@ -961,4 +962,7 @@ p{
     position: absolute;
     width: 100%;
     max-width:800px;
+}
+.secao h2{
+    color:#BFC3CC;
 }
