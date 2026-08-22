@@ -923,3 +923,42 @@ p{
     display: flex;
     margin-left: 180px;
 }
+.secao6{
+    background: #111;
+    padding:70px 20px;
+    text-align: center;
+}
+.secao6 h3{
+    display: inline-block;
+}
+.secao6 p{
+    max-width:800px; 
+    margin:0 auto 20px; 
+    color:#BFC3CC; 
+    font-size:18px; 
+    line-height:1.8;
+}
+.alunos{
+    justify-content: space-between;
+    display: inline-block;
+    text-align: left;
+    border-left: 0px;
+
+}
+.responsa{
+    justify-content: space-between;
+    display: inline-block;
+    text-align: left;
+    border-right: 0px;
+}
+.sin{
+    display: flex;
+    justify-content: space-between;
+    max-width:800px;
+    margin:0 auto 20px;
+}
+.sin hr{
+    position: absolute;
+    width: 100%;
+    max-width:800px;
+}
