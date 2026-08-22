@@ -7,37 +7,37 @@ const perguntas = [
     {
         audio: "audios/audio1.mpeg",
         resposta: "humano",
-        explicacao: "Este áudio foi produzido por um artista humano."
+        explicacao: "Este áudio foi produzido por um artista humano. The Stable Song - Gregory Isakov."
     },
 
     {
         audio: "audios/audio2.mpeg",
         resposta: "ia",
-        explicacao: "Este áudio foi gerado utilizando Inteligência Artificial."
+        explicacao: "Este áudio foi gerado utilizando Inteligência Artificial. São Paulo - Tocanna."
     },
 
     {
         audio: "audios/audio3.mpeg",
         resposta: "humano",
-        explicacao: "Este áudio foi criado por uma pessoa."
+        explicacao: "Este áudio foi criado por uma pessoa. Azul - éoDan."
     },
 
     {
         audio: "audios/audio4.mpeg",
         resposta: "ia",
-        explicacao: "Este áudio foi produzido por uma ferramenta de IA."
+        explicacao: "Este áudio foi produzido por uma ferramenta de IA. Heart on my Sleeve - voz de Drake e The Weekwend."
     },
 
     {
         audio: "audios/audio5.mpeg",
         resposta: "ia",
-        explicacao: "Este é um exemplo de áudio gerado artificialmente."
+        explicacao: "Este é um exemplo de áudio gerado artificialmente. Sina de Ophelia - versão br de The fate of Ophelia."
     },
 
     {
         audio: "audios/audio6.mpeg",
         resposta: "humano",
-        explicacao: "Este áudio foi produzido por um artista humano."
+        explicacao: "Este áudio foi produzido por um artista humano. Ladinho - Flerte Flamingo."
     }
 
 ];
