@@ -130,10 +130,10 @@ nav a:hover{
 
 
 .hero-content h1{
-    font-size: 65px;
+    font-size: 57px;
     margin-top: 78px;
     margin-bottom:25px;
-    line-height:1.1;
+    line-height:1.4;
     background:linear-gradient(135deg,#60A5FA,#A78BFA);
     background-clip: text;
     -webkit-background-clip:text;
@@ -155,6 +155,8 @@ nav a:hover{
     font-size: 17px;
     margin-top: 20px;
     color: white;
+    display: flex;
+    max-width: 400px;
 }
 
 section{
@@ -388,6 +390,14 @@ model-viewer{
     margin-left:300px;
     padding:0;
     background:transparent;
+}
+
+#aichip{
+    display: flex;
+    max-width: 300px;
+    padding-left: 20px;
+    margin-left: 20px;
+
 }
 
 .container-3ds{
