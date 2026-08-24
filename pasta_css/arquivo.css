@@ -152,7 +152,7 @@ nav a:hover{
 }
 
 .textinho p{
-    font-size: 17px;
+    font-size: 13px;
     margin-top: 20px;
     color: white;
     display: flex;
@@ -394,7 +394,7 @@ model-viewer{
 
 #aichip{
     display: flex;
-    max-width: 300px;
+    max-width: 345px;
     padding-left: 20px;
     margin-left: 20px;
 
