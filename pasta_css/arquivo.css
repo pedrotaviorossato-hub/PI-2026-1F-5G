@@ -873,6 +873,11 @@ p{
     margin-bottom:15px;
 }
 
+.secao-grafico p{
+    max-width:800px; 
+    margin:0 auto 20px; 
+}
+
 .grafico-img{
     width:80%;
     max-width:750px;
