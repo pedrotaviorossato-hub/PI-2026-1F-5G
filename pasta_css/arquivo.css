@@ -874,13 +874,13 @@ p{
 }
 
 .secao-grafico p{
-    max-width:800px; 
+    max-width:1000px; 
     margin:0 auto 20px; 
 }
 
 .grafico-img{
     width:80%;
-    max-width:750px;
+    max-width:950px;
     height:auto;
 
     border:3px solid #2563EB;
