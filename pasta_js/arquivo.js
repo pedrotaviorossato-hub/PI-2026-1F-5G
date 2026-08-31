@@ -1,7 +1,12 @@
+/*/Header Escondido/*/
+// Função responsável por esconder ou mostrar o cabeçalho
 function toggleHeader(){
     const header = document.querySelector("header");
     header.classList.toggle("escondido");
 }
+
+/*/Quiz/*/
+/* Armazena os áudios, respostas corretas e explicações de cada pergunta do quiz. */
 const perguntas = [
 
     {
@@ -42,13 +47,13 @@ const perguntas = [
 
 ];
 
-
+/* Define as variáveis responsáveis por controlar a pergunta atual, a pontuação e se o usuário já respondeu. */
 let perguntaAtual = 0;
 let pontuacao = 0;
 let respondeu = false;
 
 
-
+/* Inicia ou reinicia o quiz, zerando a pontuação e carregando a primeira pergunta. */
 function iniciarQuiz(){
 
     perguntaAtual = 0;
@@ -64,7 +69,7 @@ function iniciarQuiz(){
     carregarPergunta();
 }
 
-
+/* Carrega na tela as informações, o áudio e os botões correspondentes à pergunta atual. */
 function carregarPergunta(){
 
     const pergunta = perguntas[perguntaAtual];
@@ -101,7 +106,7 @@ function carregarPergunta(){
     });
 }
 
-
+/* Verifica a resposta escolhida, atualiza a pontuação e mostra se o usuário acertou ou errou. */
 function responder(resposta){
 
     if(respondeu){
@@ -167,7 +172,7 @@ function responder(resposta){
     document.getElementById("btn-proximo").disabled = false;
 }
 
-
+/* Exibe a mensagem de acerto ou erro utilizando a classe correspondente do CSS. */
 function mostrarFeedback(texto, classe){
 
     const feedback = document.getElementById("feedback");
@@ -178,7 +183,7 @@ function mostrarFeedback(texto, classe){
         `feedback ${classe}`;
 }
 
-
+/* Avança para a próxima pergunta ou encerra o quiz quando todas forem respondidas. */
 function proximaPergunta(){
 
     perguntaAtual++;
@@ -194,7 +199,7 @@ function proximaPergunta(){
     }
 }
 
-
+/* Calcula a porcentagem de acertos, atualiza a barra de progresso e apresenta o resultado final. */
 function finalizarQuiz(){
 
     document.getElementById("quiz-box")
@@ -249,13 +254,14 @@ function finalizarQuiz(){
 }
 
 
-
+/* Reinicia o quiz chamando novamente a função responsável por iniciar o jogo. */
 function reiniciarQuiz(){
 
     iniciarQuiz();
 
 }
 
+/* Inicia automaticamente o quiz assim que toda a página HTML terminar de carregar. */
 document.addEventListener("DOMContentLoaded", function(){
 
     iniciarQuiz();
